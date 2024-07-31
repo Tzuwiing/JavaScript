@@ -33,4 +33,4 @@ let hasil = alas * tinggi * rumus;
 
 hasil;
 
-//soal 4 clear
+//soal 4
