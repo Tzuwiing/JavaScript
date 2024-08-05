@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fathan()">Cek Nilai</button>
+    <script>
+        function fathan() {
+
+            var nilai = prompt("Masukkan Nilai Anda : ");
+            var kehadiran = prompt("Masukkan Kehadiran Anda : ");
+            var totalPertemuan = prompt("Masukkan Total Pertemuan : ");
+            var lulus = (kehadiran / totalPertemuan) * 100;
+
+            if (nilai >= 85) {
+                if (lulus >= 75) {
+                    alert("Kategori A : Lulus");
+                } else {
+                    alert("Kategori A : Tidak Lulus");
+                }
+            } else if (nilai >= 70) {
+                if (lulus >= 75) {
+                    alert("Kategori B : Lulus");
+                } else {
+                    alert("Kategori B : Tidak Lulus");
+                }
+            } else if (nilai >= 50) {
+                if (lulus >= 75) {
+                    alert("Kategori C : Lulus");
+                } else {
+                    alert("Kategori C : Tidak Lulus");
+                }
+            } else {
+                alert("Kategori - : Tidak Lulus");
+            }
+        }
+    </script>
+</body>
+
+</html>
