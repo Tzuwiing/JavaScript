@@ -10,7 +10,7 @@ switch (hari) {
     break;
   case "rabu":
     console.log("Weekday");
-    break;
+    break;window
   case "kamis":
     console.log("Weekday");
     break;
