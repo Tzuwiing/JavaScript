@@ -47,3 +47,5 @@ console.log(numbers);
 console.log(numbers.length);
 
 //soal 7 clear
+
+identity.push("nama")

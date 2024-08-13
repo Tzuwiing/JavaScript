@@ -58,13 +58,13 @@ if (x > 0 && y > 0) {
 
 //soal 5 start
 
-const totalBelanja = 100;
+const totalBelanja = 70;
 
 let diskon = 0;
 
-if (totalBelanja >= 200) {
+if (totalBelanja >= 300) {
   diskon = 0.15; // = 15%
-} else if (totalBelanja >= 100 && totalBelanja <= 199) {
+} else if (totalBelanja >= 120 && totalBelanja <= 199) {
   diskon = 0.1; // = 10%
 }
 

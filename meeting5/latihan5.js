@@ -10,7 +10,7 @@ switch (hari) {
     break;
   case "rabu":
     console.log("Weekday");
-    break;window
+    break;
   case "kamis":
     console.log("Weekday");
     break;
@@ -27,8 +27,8 @@ switch (hari) {
 //soal 1 clear
 
 //soal 2 start
-for (let i = 1; i <= 15; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
+for (let i = 1; i <= 25; i++) {
+  if (i % 3 === 0 && i % 8 === 0) {
     console.log("FizzBuzz");
   } else if (i % 3 === 0) {
     console.log("Fizz");
@@ -50,7 +50,7 @@ for (let i = 0; i <= 10; i++) {
 
 //soal 4 start
 for (let i = 1; i <= 15; i++) {
-  if (i % 3 === 0) {
+  if (i % 5 === 0) {
     console.log("multipleofthree");
   } else {
     console.log(i);
