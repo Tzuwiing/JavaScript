@@ -4,10 +4,12 @@ const person = {
   name: "Yewon",
   age: 26,
   city: "Jakarta",
+  country: "Indonesia",
 };
 
-console.log(person["name"]);
-console.log(person.name);
+console.log(person["country"]);
+console.log(person.country);
+
 
 var umur = person.age + 5;
 console.log(umur);
@@ -34,14 +36,14 @@ console.log(UserName, UserAge, UserCity);
 class book {
   constructor(title, author) {
     this.title = title;
-    this.author = author;
+    this.asd = author;
   }
 
   getdetail() {
-    return `${this.title} by ${this.author}`;
+    return `${this.title} by ${this.asd}`;
   }
   updateAuthor(newAuthor) {
-    this.author = newAuthor;
+    this.asd = newAuthor;
   }
 }
 
