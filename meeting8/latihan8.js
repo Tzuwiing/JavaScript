@@ -143,7 +143,7 @@ console.log(people.introduce());
 let employee = new Employee("Yewon", "Programmer");
 console.log(employee.introduce());
 
-let manager = new Manager("Yewon", "Programmer");
+let manager = new Manager("Yewon", "Manager");
 console.log(manager.introduce());
 
 //soal 3 clear
