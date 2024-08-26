@@ -231,3 +231,70 @@ console.log(kendaraan1.getKecepatan());
 //soal 4 clear
 
 //soal 5 start
+
+class akunBank {
+  constructor(saldo, setoran) {
+    var _saldo = saldo;
+    var _setoran = setoran;
+    this.setSaldo = function (saldo) {
+      _saldo = saldo;
+    };
+
+    this.setSetoran = function (setoran) {
+      _setoran = setoran;
+    };
+
+    this.getSetoran = function () {
+      return _setoran;
+    };
+    this.getSaldo = function () {
+      if (_saldo < 0) {
+        return (saldo = Null);
+      } else {
+        return (_saldo = saldo + setoran);
+      }
+      return _saldo;
+    };
+  }
+}
+
+let akun1 = new akunBank(1000, 5000);
+console.log(akun1.getSaldo());
+
+//soal5
+
+//soal6
+class karyawan2 {
+  constructor(nama, gaji) {
+    var _nama = nama;
+    var _gaji = gaji;
+
+    this.setnama = function (nama) {
+      _nama = nama;
+    };
+
+    this.setgaji = function (gaji) {
+      _gaji = gaji;
+    };
+
+    this.getnama = function () {
+      return _nama;
+    };
+
+    this.getgaji = function () {
+      return _gaji;
+    };
+  }
+}
+
+class manajer2 extends karyawan2 {
+  constructor(nama, gaji) {
+    super(nama, gaji);
+  }
+  laporan() {
+    return `Manajer ${this.getnama()} diberi gaji sebesar ${this.getgaji()} Rupiah`;
+  }
+}
+
+let karyawan3 = new manajer2("Yewon", 5000000);
+console.log(karyawan3.laporan());
