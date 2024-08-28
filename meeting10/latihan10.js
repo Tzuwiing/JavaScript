@@ -3,7 +3,7 @@ function luasPersegi(s) {
   return s * s;
 }
 
-console.log(luasPersegi(4));
+console.log(luasPersegi(8));
 
 // Skillvull clear
 
@@ -129,3 +129,13 @@ console.log(displayResult(finalPrice, "paid"));
 console.log(displayResult(finalPrice, "pending"));   
 
 //soal 4 clear
+
+const persegiPanjang = (panjang, lebar) => panjang * lebar
+
+console.log(persegiPanjang(10, 5));
+
+const persegi = (sisi) => {
+  return 4 * sisi
+}
+
+console.log(persegi(5));
