@@ -1,4 +1,5 @@
+import { byMe, byhim } from "./exam.mjs";
 
-import { getDivisibleByFourString2 } from "./exam.mjs";
+console.log(byMe());
 
-console.log(getDivisibleByFourString2());
+console.log(byhim());

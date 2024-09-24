@@ -62,23 +62,55 @@
 
 //soal 4 start
 
-async function getUserProfile() {
-  await fetch("https://jsonplaceholder.typicode.com/users/1")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (users) {
-      console.log(users.name);
-      if (users.name === "Leanne Graham") {
-        console.log("User is Leanne Graham");
-      } else {
-        console.log("User is not Leanne Graham");
-      }
-    });
-}
+// async function getUserProfile() {
+//   await fetch("https://jsonplaceholder.typicode.com/users/1")
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (users) {
+//       console.log(users.name);
+//       if (users.name === "Leanne Graham") {
+//         console.log("User is Leanne Graham");
+//       } else {
+//         console.log("User is not Leanne Graham");
+//       }
+//     });
+// }
 
-console.log(getUserProfile());
+// console.log(getUserProfile());
 
 //soal 4 clear
 
 //soal 5 start
+
+// async function getPostDetails() {
+//   const result = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+//   const data = await result.json();
+//   if (result.status === 200) {
+//     console.log(data.title);
+//   } else {
+//     console.log("failed to fetch post");
+//   }
+// }
+
+// getPostDetails();
+
+//soal 5 clear
+
+//soal 6 start
+
+async function checkPostAvailability() {
+  const result2 = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+  const data2 = await result2.json();
+
+  let hasil = result2.userId > 5 ? "post is available for user IDs greater than 5" : "post is not available for user IDs greater than 5";
+  console.log(hasil);
+
+//   if (result2.userId > 5) {
+//     console.log("post is available for user IDs greater than 5");
+//   } else {
+//     console.log("post is not available for user IDs greater than 5");
+//   }
+}
+
+checkPostAvailability();
