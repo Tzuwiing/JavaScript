@@ -81,4 +81,4 @@ console.log(getUserProfile());
 
 //soal 4 clear
 
-//soal 5 clear
+//soal 5 start
