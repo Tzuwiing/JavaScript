@@ -49,3 +49,34 @@ console.log(numbers.length);
 //soal 7 clear
 
 identity.push("nama")
+console.log(identity)
+ 
+
+//coba
+identity[3] = "yewon"
+ console.log(identity)
+
+ identity[3] = "sully"
+ console.log(identity)
+
+const car = {
+  name: "bmw",
+  type: {
+    color: "black",
+    series: "2001",
+  }
+};
+
+console.log(car.series);
+
+
+let x = 5;
+let y = 10;
+let z = 15;
+if (x < y && z > y) {
+  console.log("Accepted");
+} else {
+  console.log("Rejected");
+}
+
+
