@@ -26,6 +26,18 @@
 
 
 
+    <!-- Soal 3 Start -->
+
+    <div>
+        <ul id="kontenDaftar">
+
+        </ul>
+    </div>
+
+
+    <!-- Soal 3 End -->
+
+
     <!-- Soal 4 Start -->
     <div id="colorBox">
         <p>Ini adalah Teks yang akan diubah warnanya</p>
@@ -61,19 +73,33 @@
         //soal 2 end
 
 
+        //soal 3 start
+
+        const kontenDaftar = document.getElementById("kontenDaftar");
+        const daftar = ["Item 1", "Item 2", "Item 3"];
+        for (let i = 0; i < daftar.length; i++) {
+            ;
+            const newDaftar = document.createElement("li");
+            newDaftar.innerHTML = daftar[i];
+            kontenDaftar.appendChild(newDaftar);
+        };
+
+        kontenDaftar.firstElementChild.remove();
+
+
         //soal 4 start
 
-        const colorBox = document.querySelector('#colorBox');
-        let warnanya = prompt('Masukkan Warna');
-        if (warnanya == 'red') {
-            colorBox.style.color = 'red';
-        } else if (warnanya == 'blue') {
-            colorBox.style.color = 'blue';
-        } else if (warnanya == 'green') {
-            colorBox.style.color = 'green';
-        } else {
-            alert('Warna Yang Anda Masukkan Tidak Valid, Silahkan Masukkan Warna Yang Valid');
-        }
+        // const colorBox = document.querySelector('#colorBox');
+        // let warnanya = prompt('Masukkan Warna');
+        // if (warnanya == 'red') {
+        //     colorBox.style.color = 'red';
+        // } else if (warnanya == 'blue') {
+        //     colorBox.style.color = 'blue';
+        // } else if (warnanya == 'green') {
+        //     colorBox.style.color = 'green';
+        // } else {
+        //     alert('Warna Yang Anda Masukkan Tidak Valid, Silahkan Masukkan Warna Yang Valid');
+        // }
         //soal 4 end
 
     </script>
