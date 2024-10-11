@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba DOM</title>
+</head>
+
+<body>
+
+    <h1 id="title">Hello World</h1>
+    <h1 class="title2">Hello World</h1>
+    <h1 class="title2">Hello World</h1>
+    <h2>Hello World</h2>
+
+    <h1 class="Coba"><b> Mengubah Konten DOM</b></h1>
+
+    <script>
+        // const title = document.getElementById('title');
+        // console.log(title);
+
+        // const title2 = document.getElementsByClassName('title2');
+        // console.log(title2);
+
+        // const title3 = document.getElementsByTagName('h2');
+        // console.log(title3);
+
+        // const title4 = document.querySelector('#title');
+        // console.log(title4);
+
+        // const title5 = document.querySelectorAll('.title2');
+        // console.log(title5);
+
+
+        // coba[0].style.color = 'White';
+        // coba[0].style.backgroundColor = 'black';
+        // coba[0].style.padding = '20px';
+        // coba[0].style.textAlign = 'center';
+        // coba[0].style.borderRadius = '10px';
+        // coba[0].style.margin = '10px';
+        // coba[0].style.fontSize = '20px';
+        // coba[0].style.fontWeight = 'bold';
+        // coba[0].style.textDecoration = 'underline';
+        // coba[0].style.textTransform = 'uppercase';
+        // coba[0].style.letterSpacing = '5px';
+        // coba[0].style.lineHeight = '2';
+        // coba[0].style.wordSpacing = '10px';
+        // coba[0].style.border = '1px solid blue';
+        // coba[0].style.boxShadow = '5px 5px 5px 5px rgba(0, 0, 0, 0.5)';
+        // coba[0].style.top = '50px';
+        // coba[0].style.left = '50px';
+        const coba = document.getElementsByClassName('Coba');
+
+        console.log(coba[0].innerHTML)
+        console.log(coba[0].innerText)
+        console.log(coba[0].textContent)
+
+        let newElement = document.createElement('p');
+
+        newElement.innerText = 'Mengubah Konten DOM';
+        coba[0].appendChild(newElement);
+
+        console.log(newElement)
+
+
+        coba[0].removeChild(newElement);
+
+        // newElement = null;
+
+        console.log(newElement)
+
+    </script>
+
+</body>
+
+</html>

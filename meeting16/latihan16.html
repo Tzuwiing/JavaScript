@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 16</title>
+</head>
+
+<body>
+    <!-- Soal 1 Start -->
+    <div id="coba">
+        <p class="coba">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="coba2">Perferendis
+                tempora reiciendis at quas
+                quaerat
+                minima mollitia nemo quae iure sint!</span>
+        </p>
+    </div>
+    <!-- Soal 1 End -->
+
+    <!-- Soal 2 Start -->
+    <div class="konten">
+        <p>Teks Awal</p>
+    </div>
+    <!-- Soal 2 End -->
+
+
+
+    <!-- Soal 4 Start -->
+    <div id="colorBox">
+        <p>Ini adalah Teks yang akan diubah warnanya</p>
+    </div>
+    <!-- Soal 4 End -->
+
+    <script>
+        //soal 1 start
+        const coba = document.querySelector('#coba');
+        coba.style.color = 'red';
+        console.log(coba);
+
+
+        const ubah = document.querySelector('.coba');
+        ubah.innerHTML = 'Ini Elemen Pertama yang diubah';
+        console.log(ubah);
+        //soal 1 end
+
+        //soal 2 start
+
+        let konten = document.querySelector('.konten');
+        konten.innerHTML = '<strong>Teks Baru</strong>';
+        console.log(konten.innerHTML);
+
+        // const konten2 = document.querySelector('.konten');
+        konten.innerText = 'Teks Terlalu Panjang';
+        console.log(konten.innerText);
+
+        // const konten3 = document.querySelector('.konten');
+        konten.textContent = '<strong>Teks Baru</strong>';
+        console.log(konten.textContent);
+
+        //soal 2 end
+
+
+        //soal 4 start
+
+        const colorBox = document.querySelector('#colorBox');
+        let warnanya = prompt('Masukkan Warna');
+        if (warnanya == 'red') {
+            colorBox.style.color = 'red';
+        } else if (warnanya == 'blue') {
+            colorBox.style.color = 'blue';
+        } else if (warnanya == 'green') {
+            colorBox.style.color = 'green';
+        } else {
+            alert('Warna Yang Anda Masukkan Tidak Valid, Silahkan Masukkan Warna Yang Valid');
+        }
+        //soal 4 end
+
+    </script>
+</body>
+
+</html>
