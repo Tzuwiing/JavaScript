@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- soal 1 start -->
+
+    <img src="" alt="" id="MyImage">
+
+    <!-- soal 1 end -->
+
+    <!-- soal 2 start -->
+
+    <button id="MyButton">Ini Tombol Pertama</button>
+
+    <!-- soal 2 end -->
+
+    <!-- soal 3 start -->
+
+    <ul id="MyList">
+        <li id="MyItem">Item Lama</li>
+    </ul>
+
+    <!-- soal 3 end -->
+
+    <!-- soal 4 start -->
+
+    <!-- di JS -->
+
+    <!-- soal 4 end -->
+
+
+    <!-- soal 5 start -->
+
+    <div id="imageContainer">
+
+    </div>
+
+    <!-- soal 5 end -->
+
+
+
+    <script>
+        //soal 1 start
+        const image = document.getElementById('MyImage');
+        image.src = 'https://picsum.photos/200/300';
+
+        document.body.appendChild(image);
+
+        //soal 1 end
+
+        //soal 2 start
+
+        const tombol = document.getElementById('MyButton');
+
+        tombol.style.borderRadius = "25px";
+        tombol.style.backgroundColor = "green";
+
+
+        //soal 2 end
+
+        //soal 3 start
+
+        const list = document.getElementById('MyList');
+        const item = document.createElement('li');
+        item.innerText = 'Item Baru';
+        list.appendChild(item);
+
+        //soal 3 end
+
+        //soal 4 start
+
+        const sisipkan = document.createElement('li');
+        sisipkan.innerText = 'Item Sisipan';
+        list.insertBefore(sisipkan, item);
+
+        //soal 4 end
+
+        //soal 5 start
+
+        const container = document.getElementById('imageContainer');
+        const gambar = document.createElement('img');
+        gambar.setAttribute('src', 'https://picsum.photos/200/300');
+
+        gambar.style.borderRadius = "50%";
+
+        container.appendChild(gambar);
+
+        //soal 5 end
+    </script>
+</body>
+
+</html>
