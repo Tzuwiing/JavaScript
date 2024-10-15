@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 18</title>
+</head>
+
+<body>
+    <!-- Soal 1 start -->
+
+    <button id="addEventListener">Tombol bukan sembarang Tombol</button>
+
+    <!-- Soal 1 end -->
+
+    <!-- Soal 2 start -->
+
+    <button id="MyButton">Tombol soal ke 2</button>
+
+    <!-- Soal 2 end -->
+
+    <!-- Soal 3 start   -->
+
+    <button id="button3">Tekan Aku</button>
+    <h3>Kamu sudah menekan tombol (tekan aku) di atas sebanyak <span id="count">0</span></h3>
+
+    <!-- soal 3 end -->
+
+    <!-- soal 4 start -->
+
+    
+
+
+    <script>
+
+        // Soal 1 start
+
+        const button = document.getElementById("addEventListener");
+        button.addEventListener('click', function () {
+            alert('Tombol Berhasil diklik');
+        });
+
+        //soal 1 clear
+
+        //soal 2 start
+
+        function showAlert() {
+            alert("Tombol soal ke 2 diklik");
+        }
+
+        window.onload = function () {
+            document.getElementById("MyButton").addEventListener("click", showAlert);
+        };
+
+        //soal 2 end
+
+
+        //soal 3 start
+
+
+        const button3 = document.getElementById("button3");
+        button3.addEventListener('click', function () {
+            increment();
+        });
+
+        function increment() {
+            let count = document.getElementById("count").innerText; count++;
+            document.getElementById("count").innerText = count;
+        }
+
+        //soal 3 end
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -108,13 +108,9 @@ async function checkPostAvailability() {
       ? "post is available for user IDs greater than 5"
       : "post is not available for user IDs greater than 5";
   console.log(hasil);
-
-  //   if (result2.userId > 5) {
-  //     console.log("post is available for user IDs greater than 5");
-  //   } else {
-  //     console.log("post is not available for user IDs greater than 5");
-  //   }
 }
+
+checkPostAvailability();
 
 checkPostAvailability();
 
