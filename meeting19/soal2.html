@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2 Latihan 19</title>
+</head>
+
+<body>
+    <div id="parent">
+        <button id="myButton">Click Me !</button>
+    </div>
+
+    <script>
+        // Membuat custom event bernama 'buttonClicked'
+        const buttonClicked = new CustomEvent('buttonClicked');
+
+        // Fungsi untuk menangani custom event
+        function handleButtonClick() {
+            console.log('Button was clicked!');
+        }
+
+        // Fungsi untuk menangani klik pada elemen parent
+        function handleParentClick() {
+            document.getElementById('parent').addEventListener('click', function () {
+                console.log('Parent received the event!');
+            });
+        }
+
+        window.addEventListener('load', function () {
+            const tombol = document.getElementById('myButton');
+
+            // Menambahkan event listener untuk custom event 'buttonClicked'
+            window.addEventListener('buttonClicked', handleButtonClick);
+
+            // Saat tombol diklik, dispatch custom event 'buttonClicked'
+            tombol.addEventListener('click', function () {
+                window.dispatchEvent(buttonClicked);
+            });
+
+            // Memanggil fungsi untuk menangani klik pada parent
+            handleParentClick();
+        });
+    </script>
+
+
+</body>
+
+</html>
