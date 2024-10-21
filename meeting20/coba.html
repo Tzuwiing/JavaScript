@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba</title>
+</head>
+
+<body>
+    <div id="elemen1" style="height: 500px; width: 500px; color: blue; background-color: yellow">
+        <p id="elemen2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae tenetur cum ad autem
+            tempora, vitae
+            consequatur voluptatibus esse quis fugiat!</p>
+    </div>
+
+
+    <a href="https://www.google.com" id="myLink">Kunjungi google.com</a>
+
+    <div class="message" id="message"></div>
+
+
+    <script>
+        document.getElementById('elemen1').addEventListener('mouseover', function () {
+            this.style.backgroundColor = 'blue';
+            this.style.color = 'yellow';
+        });
+
+        document.getElementById('elemen1').addEventListener('mouseout', function () {
+            this.style.backgroundColor = 'yellow';
+            this.style.color = 'blue';
+        });
+
+        document.getElementById('elemen2').addEventListener('copy', function () {
+            alert("text copied")
+        });
+
+        document.getElementById('myLink').addEventListener('click', function (event) {
+            event.preventDefault();
+
+            messageDiv.textContent =
+                'Anda mengklik link, tetapi tidak akan diarahkan ke google'
+        })
+    </script>
+</body>
+
+</html>
