@@ -89,6 +89,7 @@ input[type="date"] {
   box-sizing: border-box;
   margin-bottom: 8px;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .btn-submit {
@@ -175,6 +176,14 @@ input[type="date"],
 .check-button:focus,
 .trash-button {
   outline: none;
+}
+
+#todos {
+  width: 1030px;
+}
+
+#completed-todos {
+  width: 1030px;
 }
 
 @media only screen and (max-width: 1024px) {
